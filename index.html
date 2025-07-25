@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chef Clinton Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      background: #fff8f2;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: url('./images/ChatGPT\ Image\ Jul\ 25\,\ 2025\,\ 02_18_48\ PM.png') center/cover no-repeat;
+      height: 100vh;
+      position: relative;
+    }
+    .hero .overlay {
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .btn {
+      background: #e09157;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #cf7c42;
+    }
+    .section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      color: #e26d5c;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border: 2px solid #f4e3d7;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .profile-img {
+      display: block;
+      max-width: 260px;
+      margin: 30px auto;
+      border-radius: 50%;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .subsection {
+      margin-top: 40px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border: 2px solid #f4e3d7;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #e26d5c;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #d25c47;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #f4e3d7;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <img src="./images/WhatsApp_Image_2025-07-25_at_13.55.06-removebg-preview.png" alt="Chef Anita" class="profile-img" />
+    <div class="subsection">
+      <p>I'm Chef Clinton, a culinary artist specializing in baking and cooking. My journey began in BOMA School in Nairobi and has since taken me to gourmet kitchens. I blend traditional recipes with modern presentation and take pride in using organic, locally sourced ingredients.</p>
+      <p>I offer bespoke baking services for events, baking classes, and dessert consultation for restaurants and cafes. Whether it’s a tiered wedding cake or a warm batch of sourdough, every creation is made with precision, passion, and creativity.</p>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Baking Specialties</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Custom Celebration Cakes</h3>
+        <p>Layered, themed, and personalized cakes for weddings, birthdays, and special moments. Vegan and gluten-free options available.</p>
+      </div>
+      <div class="card">
+        <h3>Pastries & Tarts</h3>
+        <p>French croissants, Danish pastries, fruit tarts, éclairs and gourmet puff delights.</p>
+      </div>
+      <div class="card">
+        <h3>Rustic Artisan Breads</h3>
+        <p>Handcrafted sourdough, baguettes, ciabatta, focaccia, rye and multigrain loaves baked daily.</p>
+      </div>
+      <div class="card">
+        <h3>Corporate & Café Supply</h3>
+        <p>Fresh daily baked goods for cafés, hotels, and corporate events with delivery options.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <img src="WhatsApp Image 2025-07-25 at 13.52.00 (1).jpeg" alt="Wedding Cake" />
+      <img src="WhatsApp Image 2025-07-25 at 13.57.12.jpeg" alt="Pastry Platter" />
+      <img src="WhatsApp Image 2025-07-25 at 13.52.54.jpeg" alt="Artisan Bread" />
+      <img src="WhatsApp Image 2025-07-25 at 13.52.00.jpeg" alt="Mini Tarts" />
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto;">Interested in a custom order, attending a baking class, or hiring me for an event? Fill in the form below and I’ll respond within 24 hours.</p>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Chef Clinton | Nairobi, Kenya | IG: @ChefClintonBakes | All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for your message! I will get back to you shortly.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
